@@ -300,11 +300,11 @@ nav .fa{
     }
 }
 .walikelas-box{
-    margin: auto;
     display: flex;
     justify-content: space-between;
     padding: 50px 100px;
     flex-wrap: wrap;
+    margin: auto;
 }
 .walikelas{
     color: #000000;
@@ -336,8 +336,11 @@ nav .fa{
     .walikelas{
         top: 0;
         margin: 10px;
-        flex-basis: 100%;
         text-align: center;
+    }
+    .walikelas-box{
+        display: block;
+        margin: 0;
     }
     .walikelas h1{
         font-size: 25px;
@@ -345,14 +348,19 @@ nav .fa{
     .walikelas p{
         font-size: 12px;
     }
+    .walikelas-img{
+        width: 100%;
+    }
+    .walikelas-img img{
+        width: 100%;
+    }
 }
 
 /*-----foto-----*/
 #foto{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background: #393E46;
-    position: relative;
 }
 .foto{
     position: relative;
@@ -420,4 +428,15 @@ nav .fa{
     text-align: center;
     margin: 10px;
     margin-bottom: 75px;
+}
+@media(max-width: 700px){
+    #foto{
+        height: 100%;
+    }
+    .foto{
+        height: 100%;
+    }
+    .popup-foto img{
+        width: 95%;
+    }
 }
