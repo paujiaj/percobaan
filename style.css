@@ -129,7 +129,7 @@ nav .fa{
         }
         .nav-links{
             position: absolute;
-            background: rgb(92, 70, 156);
+            background: #ffffff;
             height: 100vh;
             width: 200px;
             top: 0;
@@ -138,6 +138,7 @@ nav .fa{
             z-index: 2;
             transition: 1s;
             margin: 0;
+            box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3);
         }
         .nav-links ul li{
             display: block;
