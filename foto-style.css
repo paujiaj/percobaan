@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    width: 15px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(212, 173, 252);
+    border-radius: 7.5px;
+}
+body::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 1);
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(12,19,79,0.9), rgba(0, 0, 0, 1)), url(img/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin: 10px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:rgb(212, 173, 252);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+    padding: 10% 10%;
+}
+.foto-text{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.foto-text h1{
+    font-size: 50px;
+}
+@media(max-width: 700px){
+    nav{
+        height: 50px;
+        justify-content: flex-end;
+    }
+    .foto-text h1{
+        font-size: 40px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(92, 70, 156);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -700px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        margin: 0;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        padding: 15px;
+
+    }  
+    .nav-links ul{
+        padding: 30px;
+
+    }
+}
+.sec-foto{
+    background: rgba(0, 0, 0, 1);
+    width: 100%;
+    padding: 70px;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+.foto-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.foto{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #D4ADFC;
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.foto img:hover{
+    transform: scale(1.1);
+}
+.popup-foto{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.popup-foto span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.popup-foto img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1850px;
+    height: 100vh;
+    object-fit: contain;
+}
+
+@media (max-width:700px){
+    .popup-foto img{
+        width: 95%;
+    }
+}

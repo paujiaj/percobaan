@@ -1,0 +1,60 @@
+dibawah "dibuat oleh fauzi"
+      
+        <a href="" class="hero-btn">X-2</a>
+        <a href="index.html"><img src="img\logo .png"></a>
+
+
+.single-box:hover .overlay{
+    opacity: 1;
+}
+
+
+1. ADIVA SASIKIRANA
+2. ADRIAN RAJENDRA WAHYUDI
+3. AKHMAD FAIZ ARYANSYAH
+4. ANISSA NUR KRESANDRA
+5. ANSAR RASYIDI
+6. DANIEL ARIF WICAKSANA
+7. DZIANIDA FEBRY AZZAHRA
+8. EMIRSYAH AKBAR SHAFA
+9. FAHRI FEBRIAN PRASETYO
+10. GHAISAN ALFARISI
+11. GHEA HILMI ALLIYA
+12. HANAN RAY MAULANA HAKIM
+13. IDELIA ADINDA RAHMADANI
+14. KEISYA NADIEN SISWANTORO
+15. KHALILA ALIYA NIRMALA
+16. MAULANA NABIL AR RASYID
+17. MUHAMMAD FARHAN RAUSAN FIKRI
+18. MUHAMMAD FAUZI RAMADHANI
+19. MUHAMMAD YAGA WIRATAMA
+20. NAILA RAHMAH ASFAHANI
+21. NARAYA KIRANA
+22. RADITYA AAZKA DANISWARA
+23. RAISYA SEFIANI JANPRILIA
+24. RAJWA NADYA ULYA
+25. REFA PUBIAN SYAKIRA
+26. SALISAH RAYSA PUTRI
+27. SALMA KHAIRANI MAGHFIRAH
+28. SHEILVANI FITRIAN SYAH
+29. SHIFWAH MURRAN NASHIFA
+30. VITO VALIANT PRATAMA
+
+@media(max-width: 700px){
+    .content-box{
+        justify-content: center;
+    }
+    .background{
+        display: block;
+        background: rgba(0, 0, 0, 1);
+        min-height: 17vh;
+    }
+    .des-box{
+        text-align: center;
+    }
+}
+
+        <a href="#X-2" class="hero-btn">X-2</a>
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit

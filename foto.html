@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="foto-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Foto</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+   
+           <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hidemenu()"></i>
+               <ul>
+                       <li><a href="index.html">HOME</a></li>
+                       <li><a href="">ABOUT</a></li>
+                       <li><a href="index.html#X-2">X-2</a></li>
+                       <li><a href="foto.html">FOTO</a></li>
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showmenu()"></i>
+       </nav>
+       <div class="foto-text">
+        <h1>FOTO-FOTO</h1>
+       </div>
+    </section>
+    <section class="sec-foto">
+        <div class="container">
+            <div class="foto-container">
+                <div class="foto"><img src="img/photo/IMG_1457.jpg"></div>
+                <div class="foto"><img src="img/photo/20240112_191233.jpg"></div>
+                <div class="foto"><img src="img/photo/AA8F5C1D-B213-4EC7-BBEB-53346919CCDA.JPG"></div>
+                <div class="foto"><img src="img/photo/IMG_1458.jpg"></div>
+                <div class="foto"><img src="img/photo/IMG_1719.jpg"></div>
+                <div class="foto"><img src="img/photo/IMG_1726.jpg"></div>
+                <div class="foto"><img src="img/photo/IMG_1729.jpg"></div>
+                <div class="foto"><img src="img/photo/IMG_1731.jpg"></div>
+                <div class="foto"><img src="img/photo/IMG_1736.jpg"></div>
+                <div class="foto"><img src="img/photo/IMG_1745.jpg"></div>
+                <div class="foto"><img src="img/photo/MPD09456.JPG"></div>
+                <div class="foto"><img src="img/photo/MPD09457.JPG"></div>
+                <div class="foto"><img src="img/photo/WhatsApp Image 2024-01-15 at 06.43.52.jpeg"></div>
+                <div class="foto"><img src="img/photo/WhatsApp Image 2024-01-15 at 06.43.53 (1).jpeg"></div>
+                <div class="foto"><img src="img/photo/WhatsApp Image 2024-01-15 at 06.43.53.jpeg"></div>
+                <div class="foto"><img src="img/photo/WhatsApp Image 2024-01-17 at 18.56.30.jpeg"></div>
+                <div class="foto"><img src="img/photo/WhatsApp Image 2024-01-17 at 18.56.31.jpeg"></div>
+                <div class="foto"><img src="img/photo/WhatsApp Image 2024-01-18 at 18.01.59.jpeg"></div>
+           </div>
+        </div>
+        <div class="popup-foto">
+            <span>&times;</span>
+            <img src="img/photo/IMG_1457.jpg">
+        </div>
+        
+    </section>
+
+
+<script>
+document.querySelectorAll('.foto-container img').forEach(image =>{
+    image.onclick = () =>{
+        document.querySelector('.popup-foto').style.display = 'block';
+        document.querySelector('.popup-foto img').src = image.getAttribute('src');
+    }
+});
+
+document.querySelector('.popup-foto span').onclick = () =>{
+    document.querySelector('.popup-foto').style.display = 'none';
+}
+</script>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right = "-12px";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-700px";
+    }
+
+</script>
+
+</body>
+</html>
